@@ -1,0 +1,8 @@
+CREATE TABLE `id_gen` (
+	`entity` VARCHAR(100) NOT NULL COLLATE 'utf8_general_ci',
+	`nextid` INT(11) NULL DEFAULT NULL,
+	PRIMARY KEY (`entity`) USING BTREE
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;

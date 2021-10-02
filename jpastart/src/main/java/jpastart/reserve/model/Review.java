@@ -7,7 +7,13 @@ import java.util.Date;
 @Table(name = "hotel_review")
 public class Review {
     @Id
+    /*@SequenceGenerator(
+            name="review_seq_gen" ,
+            sequenceName = "hotel_review_seq" ,
+            allocationSize = 1
+    )*/
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(generator = "review_seq_gen")
     private Long id;
     @Column(name = "hotel_id")
     private String hotelId;
